@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: auto;
+            min-height: 100vh;
+            display: grid;
+            grid-template-areas:
+                'header'
+                'main';
+            grid-template-columns: 1fr;
+            grid-template-rows: 100px 1fr;
+        }
+
+        header {
+            grid-area: header;
+            background-color: #000000;
+        }
+
+        #escudo {
+            height: 100%;
+        }
+
+        main {
+            grid-area: main;
+            background-color: black;
+            display: flex;
+            justify-content: center;
+        }
+
+        #content {
+            background-color: black;
+            width: 100%;
+            max-width: 1360px;
+            background-image: url("background.jpg");
+            height: auto;
+        }
+
+        #superior {
+            width: 100%;
+            height: auto;
+            display: inline-flex;
+            row-gap: 15px;
+            flex-wrap: wrap;
+            margin-top: 200px;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .card {
+            height: 305px;
+            width: 315px;
+            background-color: #181818;
+
+            box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+            -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+            -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+        }
+
+       .card:last-child {
+            background-color: black;
+            background-image: url(TorcidaCorinthians.jpg);
+            background-size: cover;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img id="escudo" src="escudoCorinthians.png" alt="">
+    </header>
+
+    <main>
+        <div id="content">
+            <div id="superior">
+                <div class="card"></div>
+                <div class="card"></div>
+                <div class="card"></div>
+                <div class="card">
+                    <h2 style="color: yellow;">Vire Sócio</h2>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
