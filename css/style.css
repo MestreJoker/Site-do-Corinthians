@@ -42,6 +42,7 @@
             max-width: 1360px;
             background-image: url("../images/background.jpg");
             height: auto;
+            background-position-x: center;
         }
 
         #superior {
@@ -53,13 +54,13 @@
             margin-top: 200px;
             justify-content: center;
             gap: 15px;
+        
         }
 
         .card {
             height: 305px;
             width: 315px;
             background-color: #181818;
-
             box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
             -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
             -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
